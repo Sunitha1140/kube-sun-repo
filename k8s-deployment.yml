@@ -25,10 +25,10 @@ kind: Service
 metadata:
   name: flm
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: my-app
   ports:
   - port: 8080
     targetPort: 80
-    LoadBalancer: a3eadc3c5b5574b329a118008d75d8fa-281387649.us-east-1.elb.amazonaws
+    Nodeport: 32048
